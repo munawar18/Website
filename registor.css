@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url('image2.webp');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 6px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.title
+{
+    font-size: 28px;
+    color: #1ab188;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+}
+
+.message,
+.signin
+{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.signin a
+{
+    color: #1ab188;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.signin a:hover
+{
+    color: #53f0a7;
+}
+.form-group
+{
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+.form label
+{
+    position: relative;
+}
+.form label input
+{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.form label input + span
+{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #24323d;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.form label input:placeholder-shown + span
+{
+    top: 15px;
+    font-size: 0.9em;
+}
+.form label input:focus + span,
+.form label input:valid + span
+{
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+.form label input:valid + span
+{
+    color: #1ab188;
+}
+.form label .icon
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #24323d;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.submit
+{
+    border: none;
+    outline: none;
+    background: #1ab188;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+.submit:hover
+{
+    background: #1ec79a;
+    transition: 0.3s;
+}
+
+
+
+form i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
